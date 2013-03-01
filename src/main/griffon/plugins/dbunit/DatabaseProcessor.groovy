@@ -16,6 +16,7 @@
 
 package griffon.plugins.dbunit
 
+import griffon.util.ApplicationHolder
 import griffon.plugins.datasource.DataSourceHolder
 import org.dbunit.database.DatabaseDataSourceConnection
 import org.dbunit.database.IDatabaseConnection
