@@ -1,0 +1,18 @@
+DESCRIPTION
+        export-database
+
+	Exports a database in XML format
+
+SYNTAX
+        dbunit:export-database [options]
+
+OPTIONS
+        --datasource
+                Name of the configured datasource found in DataSource.groovy
+                (defaults to default)
+        --format
+                Format to use for exporting.
+                Valid values are [flatxml, xml]
+                (defaults to flatxml)
+        --non-interactive
+                Controls if the shell can ask for input or not.

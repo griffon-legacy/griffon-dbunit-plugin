@@ -1,0 +1,34 @@
+DESCRIPTION
+        import-database
+
+	Imports a database in XML format
+
+SYNTAX
+        dbunit:import-database [options] files
+
+ARGUMENTS
+        files
+                List of files to be imported.
+
+OPTIONS
+        --case-sensitive-table-names
+                 Whether or not the created dataset should use case sensitive
+                 table names
+        --column-sensing
+                Read in the whole XML into a buffer and dynamically add new
+                columns as they appear.
+        --datasource
+                Name of the configured datasource found in DataSource.groovy
+                (defaults to default)
+        --dtd-metadata
+                Whether or not DTD metadata is available to parse via a DTD handler.
+        --format
+                Format to use for importing.
+                Valid values are [flatxml, xml]
+                (defaults to flatxml)
+        --non-interactive
+                Controls if the shell can ask for input or not.
+        --operation
+                Database operation to use.
+                Valid values are [clean-insert, insert, update]
+                (defaults to clean-insert)
